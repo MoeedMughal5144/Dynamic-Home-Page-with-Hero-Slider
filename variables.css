@@ -1,0 +1,17 @@
+/* =============================================
+   DESIGN TOKENS
+   ============================================= */
+:root {
+  --bg:        #09090c;
+  --surface:   #111116;
+  --border:    rgba(255,255,255,0.08);
+  --text:      #f0ede8;
+  --muted:     rgba(240,237,232,0.45);
+  --accent:    #e8ff47;
+  --accent2:   #ff4f6a;
+  --accent3:   #47e8d4;
+  --font-disp: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --ease:      cubic-bezier(0.76, 0, 0.24, 1);
+  --radius:    4px;
+}

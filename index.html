@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Portfolio – Creative Developer</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta name="description" content="A portfolio showcasing cutting-edge web projects and development services." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/slider.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="loader">
+    <div class="loader-text" id="loaderText"></div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursorDot"><div class="cursor-dot"></div></div>
+  <div class="cursor" id="cursorRing"><div class="cursor-ring"></div></div>
+
+  <!-- Navigation -->
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav-logo">NX<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta">Hire Me</button>
+  </nav>
+
+  <!-- Hero Slider -->
+  <section class="hero" aria-label="Featured projects slider" role="region">
+    <div class="slides-wrapper" id="slidesWrapper">
+
+      <article class="slide active" role="group" aria-roledescription="slide" aria-label="Slide 1 of 5">
+        <div class="slide-bg" style="background-image: url(images/AI\ ML.jpg)" role="img" aria-label="AI Dashboard visualization"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag">AI / Machine Learning</span>
+          <h1 class="slide-title">Neural<br>Vision <em>Lab</em></h1>
+          <p class="slide-desc">An intelligent image analysis platform powered by custom-trained computer vision models, processing over 2M images per day with 98.4% accuracy.</p>
+          <div class="slide-actions">
+            <a href="#" class="btn-primary">View Project <span class="btn-arrow">→</span></a>
+            <a href="#" class="btn-ghost">Case Study</a>
+          </div>
+        </div>
+        <div class="slide-number" aria-hidden="true">01</div>
+      </article>
+ 
+      <article class="slide" role="group" aria-roledescription="slide" aria-label="Slide 2 of 5">
+        <div class="slide-bg" style="background-image: url(images/web.jpg)" role="img" aria-label="Code on dark screen"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag">Web Development</span>
+          <h1 class="slide-title">Full-Stack<br><em>Commerce</em></h1>
+          <p class="slide-desc">A blazing-fast e-commerce platform built with Next.js and Rust backend, handling 50k concurrent users with sub-100ms response times.</p>
+          <div class="slide-actions">
+            <a href="#" class="btn-primary">View Project <span class="btn-arrow">→</span></a>
+            <a href="#" class="btn-ghost">Live Demo</a>
+          </div>
+        </div>
+        <div class="slide-number" aria-hidden="true">02</div>
+      </article>
+
+      <article class="slide" role="group" aria-roledescription="slide" aria-label="Slide 3 of 5">
+        <div class="slide-bg" style="background-image: url(images/data\ visual.jpg)" role="img" aria-label="Data analytics dashboard"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag">Data Visualization</span>
+          <h1 class="slide-title">Pulse<br><em>Analytics</em></h1>
+          <p class="slide-desc">Real-time business intelligence dashboard turning complex data streams into actionable insights through elegant, interactive visualizations.</p>
+          <div class="slide-actions">
+            <a href="#" class="btn-primary">View Project <span class="btn-arrow">→</span></a>
+            <a href="#" class="btn-ghost">Learn More</a>
+          </div>
+        </div>
+        <div class="slide-number" aria-hidden="true">03</div>
+      </article>
+
+      <article class="slide" role="group" aria-roledescription="slide" aria-label="Slide 4 of 5">
+        <div class="slide-bg" style="background-image: url(images/mobile\ app.jpg)" role="img" aria-label="Mobile app on phone"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag">Mobile Development</span>
+          <h1 class="slide-title">Drift<br><em>Finance</em></h1>
+          <p class="slide-desc">Award-winning personal finance app with AI-powered spending predictions, reaching 400k users in its first three months on the App Store.</p>
+          <div class="slide-actions">
+            <a href="#" class="btn-primary">View Project <span class="btn-arrow">→</span></a>
+            <a href="#" class="btn-ghost">App Store</a>
+          </div>
+        </div>
+        <div class="slide-number" aria-hidden="true">04</div>
+      </article>
+
+      <article class="slide" role="group" aria-roledescription="slide" aria-label="Slide 5 of 5">
+        <div class="slide-bg" style="background-image: url(images/system.jpg)" role="img" aria-label="3D creative design work"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag">Design Systems</span>
+          <h1 class="slide-title">Prism<br><em>Design</em></h1>
+          <p class="slide-desc">A comprehensive design language and component library powering 12 enterprise products, built for scalability and radical consistency.</p>
+          <div class="slide-actions">
+            <a href="#" class="btn-primary">View Project <span class="btn-arrow">→</span></a>
+            <a href="#" class="btn-ghost">Documentation</a>
+          </div>
+        </div>
+        <div class="slide-number" aria-hidden="true">05</div>
+      </article>
+
+    </div>
+
+    <!-- Dots -->
+    <div class="slider-dots" role="tablist" aria-label="Slide navigation">
+      <button class="dot active" role="tab" aria-selected="true"  aria-label="Go to slide 1" tabindex="0"></button>
+      <button class="dot"        role="tab" aria-selected="false" aria-label="Go to slide 2" tabindex="-1"></button>
+      <button class="dot"        role="tab" aria-selected="false" aria-label="Go to slide 3" tabindex="-1"></button>
+      <button class="dot"        role="tab" aria-selected="false" aria-label="Go to slide 4" tabindex="-1"></button>
+      <button class="dot"        role="tab" aria-selected="false" aria-label="Go to slide 5" tabindex="-1"></button>
+    </div>
+
+    <!-- Prev / Next -->
+    <div class="slider-controls">
+      <button class="ctrl-btn" id="prevBtn" aria-label="Previous slide">&#8592;</button>
+      <button class="ctrl-btn" id="nextBtn" aria-label="Next slide">&#8594;</button>
+    </div>
+
+    <!-- Slide Counter -->
+    <div class="slide-counter" aria-live="polite" aria-atomic="true">
+      <span class="counter-current" id="counterCurrent">01</span>
+      <div class="counter-sep"></div>
+      <span class="counter-total">05</span>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+  </section>
+
+  <!-- Services Strip -->
+  <div class="services-strip" aria-label="Services offered">
+    <span class="strip-label">Services</span>
+    <div class="strip-items" aria-hidden="true" id="stripItems">
+      <span class="strip-item"><span class="strip-item-dot"></span> Web Development</span>
+      <span class="strip-item"><span class="strip-item-dot"></span> UI/UX Design</span>
+      <span class="strip-item"><span class="strip-item-dot"></span> AI Integration</span>
+      <span class="strip-item"><span class="strip-item-dot"></span> Mobile Apps</span>
+      <span class="strip-item"><span class="strip-item-dot"></span> Data Visualization</span>
+      <span class="strip-item"><span class="strip-item-dot"></span> Design Systems</span>
+      <span class="strip-item"><span class="strip-item-dot"></span> Performance Optimization</span>
+      <span class="strip-item"><span class="strip-item-dot"></span> Cloud Architecture</span>
+      <span class="strip-item"><span class="strip-item-dot"></span> Web Development</span>
+      <span class="strip-item"><span class="strip-item-dot"></span> UI/UX Design</span>
+      <span class="strip-item"><span class="strip-item-dot"></span> AI Integration</span>
+      <span class="strip-item"><span class="strip-item-dot"></span> Mobile Apps</span>
+      <span class="strip-item"><span class="strip-item-dot"></span> Data Visualization</span>
+      <span class="strip-item"><span class="strip-item-dot"></span> Design Systems</span>
+      <span class="strip-item"><span class="strip-item-dot"></span> Performance Optimization</span>
+      <span class="strip-item"><span class="strip-item-dot"></span> Cloud Architecture</span>
+    </div>
+  </div>
+
+  <!-- Featured Work -->
+  <main>
+    <section class="featured" id="work" aria-labelledby="featuredHeading">
+      <div class="section-header">
+        <div>
+          <span class="section-eyebrow">Selected Work</span>
+          <h2 class="section-title" id="featuredHeading">Recent<br>Projects</h2>
+        </div>
+        <a href="#" class="section-link">All Projects →</a>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img class="card-image" src="images/ai.jpg"Generative AI art platform interface" loading="lazy" />
+          <div class="card-body">
+            <span class="card-tag">AI / Creative</span>
+            <h3 class="card-title">Generative Studio Platform</h3>
+            <p class="card-desc">Browser-based creative tool using diffusion models for real-time image synthesis.</p>
+          </div>
+          <div class="card-arrow" aria-hidden="true">↗</div>
+        </article>
+        <article class="project-card">
+          <img class="card-image" src="images/matrix.jpg"Analytics dashboard with charts" loading="lazy" />
+          <div class="card-body">
+            <span class="card-tag">SaaS / Data</span>
+            <h3 class="card-title">Metrics Dashboard</h3>
+            <p class="card-desc">Real-time KPI monitoring with predictive trend analysis.</p>
+          </div>
+          <div class="card-arrow" aria-hidden="true">↗</div>
+        </article>
+        <article class="project-card">
+          <img class="card-image" src="images/e commerce.jpg"E-commerce store product page" loading="lazy" />
+          <div class="card-body">
+            <span class="card-tag">E-Commerce</span>
+            <h3 class="card-title">Luxe Store</h3>
+            <p class="card-desc">High-conversion fashion storefront with AR try-on.</p>
+          </div>
+          <div class="card-arrow" aria-hidden="true">↗</div>
+        </article>
+        <article class="project-card">
+          <img class="card-image" src="images/vital.jpg"alt="health app screens" loading="lazy" />
+          <div class="card-body">
+            <span class="card-tag">Mobile / Health</span>
+            <h3 class="card-title">Vital Health App</h3>
+            <p class="card-desc">iOS/Android health tracker with wearable sync.</p>
+          </div>
+          <div class="card-arrow" aria-hidden="true">↗</div>
+        </article>
+        <article class="project-card">
+          <img class="card-image" src="images/library.jpg" alt="Code editor with component library" loading="lazy" />
+          <div class="card-body">
+            <span class="card-tag">Design System</span>
+            <h3 class="card-title">Nova Component Library</h3>
+            <p class="card-desc">340+ accessible components for design–dev handoff.</p>
+          </div>
+          <div class="card-arrow" aria-hidden="true">↗</div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">NX<span>.</span></div>
+    <p class="footer-text">© 2026 Nexus Portfolio — All rights reserved.</p>
+    <p class="footer-text">Built with HTML · CSS · Vanilla JS</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/reveal.js"></script>
+</body>
+</html>

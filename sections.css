@@ -1,0 +1,161 @@
+/* =============================================
+   SERVICES STRIP & FEATURED PROJECTS SECTION
+   ============================================= */
+
+/* Scrolling services ticker */
+.services-strip {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 32px 48px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.strip-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+  padding-right: 40px;
+  border-right: 1px solid var(--border);
+  margin-right: 40px;
+  flex-shrink: 0;
+}
+.strip-items {
+  display: flex;
+  gap: 48px;
+  animation: marquee 20s linear infinite;
+  white-space: nowrap;
+}
+.strip-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+.strip-item-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* Featured section */
+.featured {
+  padding: 100px 48px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.section-eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+  display: block;
+}
+.section-title {
+  font-family: var(--font-disp);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+.section-link {
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+.section-link:hover { color: var(--text); border-color: var(--text); }
+
+/* Project cards grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+.project-card:nth-child(1) { grid-column: span 7; }
+.project-card:nth-child(2) { grid-column: span 5; }
+.project-card:nth-child(3) { grid-column: span 4; }
+.project-card:nth-child(4) { grid-column: span 4; }
+.project-card:nth-child(5) { grid-column: span 4; }
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  cursor: none;
+}
+.card-image {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s var(--ease);
+  filter: saturate(0.7);
+}
+.project-card:hover .card-image {
+  transform: scale(1.06);
+  filter: saturate(1);
+}
+.card-body { padding: 22px 24px 24px; }
+.card-tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+  display: block;
+}
+.card-title {
+  font-family: var(--font-disp);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.card-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.card-arrow {
+  position: absolute;
+  top: 18px; right: 18px;
+  width: 36px; height: 36px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.project-card:hover .card-arrow {
+  background: var(--accent);
+  color: var(--bg);
+  transform: rotate(45deg);
+}

@@ -1,0 +1,68 @@
+/* =============================================
+   KEYFRAME ANIMATIONS & PAGE LOADER
+   ============================================= */
+
+/* Marquee scroll */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Loader letter pop */
+@keyframes loadPop {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Loader progress bar */
+@keyframes loadBar {
+  0%   { width: 0; }
+  100% { width: 100%; }
+}
+
+/* Page Loader */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s 0.2s var(--ease);
+}
+.page-loader.loaded {
+  opacity: 0;
+  pointer-events: none;
+}
+.loader-text {
+  font-family: var(--font-disp);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.loader-text span {
+  display: inline-block;
+  animation: loadPop 0.5s var(--ease) forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.loader-bar {
+  position: absolute;
+  bottom: 0; left: 0;
+  height: 2px;
+  background: var(--accent);
+  animation: loadBar 1.2s var(--ease) forwards;
+}
+
+/* Scroll reveal (applied via JS) */
+.project-card {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.project-card.revealed {
+  opacity: 1;
+  transform: none;
+}
